@@ -1,0 +1,65 @@
+# Folders
+build/
+composeApp/build/
+iosApp/build/
+
+# Files
+*.lock
+
+# IDE files
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.pubxml.user
+*.sw?
+*.bak
+*~
+*.orig
+~$*
+_UpgradeReport_Files/
+UpgradeLog.XML
+*.iws
+*.ipr
+*.iwi
+*compat.creator.user
+*creator.user.pro
+out/
+dist/
+*.iml
+.kotlin
+.gradle
+**/build/
+xcuserdata
+!src/**/build/
+local.properties
+.DS_Store
+captures
+.externalNativeBuild
+.cxx
+
+# Xcode
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
+node_modules/
+
+# Signing
+*.jks
+*.p12
+*.key
+*.mobileprovision
+*.keystore
+*.cer
+*.crt
+*.pem
+*.der
+*.pfx
+
+# Google Services
+google-services.json
+GoogleService-Info.plist
