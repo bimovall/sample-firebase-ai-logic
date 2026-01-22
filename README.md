@@ -1,35 +1,15 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+# SampleFirebaseAI
 
-* [/composeApp](./composeApp/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - [commonMain](./composeApp/src/commonMain/kotlin) is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    the [iosMain](./composeApp/src/iosMain/kotlin) folder would be the right place for such calls.
-    Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./composeApp/src/jvmMain/kotlin)
-    folder is the appropriate location.
+This is a Kotlin Multiplatform project that demonstrates how to use the Firebase AI SDK with Gemini in a shared codebase for Android and iOS. You can see the complete tutorial in this [article](https://www.jetbrains.com/kotlin-multiplatform/)
 
-* [/iosApp](./iosApp/iosApp) contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform,
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+## Getting Started
 
-### Build and Run Android Application
+### Firebase Setup
 
-To build and run the development version of the Android app, use the run configuration from the run widget
-in your IDE’s toolbar or build it directly from the terminal:
-- on macOS/Linux
-  ```shell
-  ./gradlew :composeApp:assembleDebug
-  ```
-- on Windows
-  ```shell
-  .\gradlew.bat :composeApp:assembleDebug
-  ```
-
-### Build and Run iOS Application
-
-To build and run the development version of the iOS app, use the run configuration from the run widget
-in your IDE’s toolbar or open the [/iosApp](./iosApp) directory in Xcode and run it from there.
-
----
-
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+1.  Create a Firebase project in the [Firebase console](https://console.firebase.google.com/).
+2.  **For Android**:
+    *   Add an Android app to your Firebase project.
+    *   Download the `google-services.json` file and place it in the `composeApp/` directory.
+3.  **For iOS**:
+    *   Add an iOS app to your Firebase project.
+    *   Download the `GoogleService-Info.plist` file and place it in the `iosApp/` directory.
